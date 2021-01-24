@@ -15,7 +15,7 @@ function App() {
     <div
       onClick={() => setButtonColor(newButtonColor)}
     >
-      <button style={{backgroundColor: buttonColor}} disabled={buttonDisabled}>Change to {newButtonColor}</button>
+      <button style={{backgroundColor: buttonDisabled ? 'gray' : buttonColor}} disabled={buttonDisabled}>Change to {newButtonColor}</button>
       <input 
           type="checkbox"
           id="enable-button-checkbox"
